@@ -24,13 +24,13 @@ const mocks = {
 };
 
 // make server defined by schema
-const server = new ApolloServer({ typeDefs, mocks: true });
+const server = new ApolloServer({ typeDefs, mocks });
 
 // instantiate server
 server.listen().then(() => {
   console.log(`
         Server is running!
-        Listening on port 4000
+        Listening on port 4000 (Be sure to use chrome, not safari)
         Query at https://studio.apollographql.com/dev
     `);
 });
